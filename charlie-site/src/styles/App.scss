@@ -1,0 +1,52 @@
+.App {
+  display: flex;
+  background-color: $dark;
+}
+
+.app__hi {
+  color: $white;
+  margin: 40px auto;
+  font-size: 5rem;
+  font-style: normal;
+  font-weight: 100;
+  display: flex;
+  
+  .h{
+    opacity: 0;
+    transform: translatey(60px);
+    animation-duration: 800ms;
+    animation-name: hi_animation;
+    animation-fill-mode:forwards;
+    animation-timing-function: ease-out;
+  }
+  .i{
+    opacity: 0;
+    transform: translatey(60px);
+    animation-duration: 800ms;
+    animation-name: hi_animation;
+    animation-timing-function: ease-out;
+    animation-fill-mode:forwards;
+    animation-delay: 100ms;
+  }
+  .p{
+    opacity: 0;
+    transform: translatey(60px);
+    animation-duration: 800ms;
+    animation-name: hi_animation;
+    animation-timing-function: ease-out;
+    animation-fill-mode:forwards;
+    animation-delay: 200ms;
+  }
+  
+}
+
+@keyframes hi_animation {
+  from {
+    transform: translatey(60px);
+    opacity: 0;
+  }
+  to {
+    transform: translatey(0px);
+    opacity: 1;
+  }
+}
