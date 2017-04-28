@@ -11,6 +11,7 @@
   background-color: $dark;
   align-items: center;
   justify-content: center;
+  margin-bottom:100px;
 }
 
 .app__hi {
@@ -61,11 +62,26 @@
 }
 
 .app__section {
-  margin: 40px 0;
+  margin-bottom: 100px;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+
+  &--lists {
+    align-items: flex-start;
+    text-align: center;
+
+    h4 {
+      margin-bottom: 10px;
+      font-size: 1.2rem;
+      font-weight: 400;
+    }
+  }
+}
+
+.list {
+  margin: 0 20px;
 }
 
 .para {
@@ -85,5 +101,26 @@
   &__img {
     max-height: 100%;
     max-width: 100%;
+  }
+}
+
+.section-header {
+  font-size: 2.5rem;
+  font-weight: 400;
+
+  .bold {
+    color: $red;
+  }
+}
+
+.skills-list {
+  list-style-type: none;
+  margin: 0 30px;
+  padding: 0;
+
+  li {
+    font-size: .95rem;
+    font-weight: 200;
+    margin: 5px 0;
   }
 }

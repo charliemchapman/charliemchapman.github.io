@@ -20,6 +20,41 @@ class App extends Component {
             <p>My name is <strong>Charlie Chapman</strong> and I write software for a living.</p>
           </div>
         </section>
+        <h1 className="section-header">I have a some <span className="bold">skills</span></h1>
+        <section className="app__section app__section--lists">
+          <div className="list">
+            <h4>Javscript</h4>
+            <ul className="skills-list">
+              <li>React</li>
+              <li>Mocha</li>
+              <li>Nightmare Js</li>
+              <li>Node</li>
+              <li>jQuery</li>
+            </ul>
+          </div>
+          <div className="list">
+            <h4>.Net</h4>
+            <ul className="skills-list">
+              <li>MVC</li>
+              <li>Web Api</li>
+              <li>Windows 8</li>
+              <li>Windows Phone</li>
+              <li>XAML</li>
+              <li>Selenium</li>
+              <li>Moq</li>
+            </ul>
+          </div>
+          <div className="list">
+            <h4>Other</h4>
+            <ul className="skills-list">
+              <li>HTML5</li>
+              <li>CSS</li>
+              <li>Jenkins</li>
+              <li>Azure</li>
+              <li>AWS</li>
+            </ul>
+          </div>
+        </section>
       </div>
     );
   }
