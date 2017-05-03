@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <body>
+
+        <h2>My First JavaScript</h2>
+
+        <input id="textbox" type="text">
+
+        </input>
+
+        <button type="button" onclick="fToc()">
+            F to C
+        </button>
+
+        <button type="button" onclick="cTof()">
+            C to F
+        </button>
+
+        <p id="paragraph">
+            
+        </p>
+
+        <script type="text/javascript">
+            function fToc(){
+                var textbox = document.getElementById("textbox");
+                var text = textbox.value;
+
+                if (text == "") {
+                    alert("box is empty")
+                }
+                else if (isNaN(text)) {
+                    alert("input is not a number")
+                }
+                else {
+                    var fahrenheit = parseInt(text);
+                    var celcius = (fahrenheit - 32) * (5/9);
+
+                    var paragraph = document.getElementById("paragraph");
+                    paragraph.innerHTML = fahrenheit + " in fahrenheit equals " + celcius + " in celcius";
+                }
+            }
+
+            function cTof(){
+                 var textbox = document.getElementById("textbox");
+                var text = textbox.value;
+
+                if (text == "") {
+                    alert("box is empty")
+                }
+                else if (isNaN(text)) {
+                    alert("input is not a number")
+                }
+                else {
+                    var celcius = parseInt(text);
+                    var fahrenheit = (celcius * 9/5) + 32;
+
+                    var paragraph = document.getElementById("paragraph");
+                    paragraph.innerHTML = celcius + " in fahrenheit equals " + fahrenheit + " in celcius";
+                }
+            }
+            
+        </script>
+    </body>
+</html> 

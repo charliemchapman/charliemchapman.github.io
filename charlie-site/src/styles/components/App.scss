@@ -28,6 +28,7 @@
     animation-name: hi_animation;
     animation-fill-mode:forwards;
     animation-timing-function: ease-out;
+    animation-delay: 500ms;
   }
   .i{
     opacity: 0;
@@ -36,7 +37,7 @@
     animation-name: hi_animation;
     animation-timing-function: ease-out;
     animation-fill-mode:forwards;
-    animation-delay: 100ms;
+    animation-delay: 600ms;
   }
   .p{
     opacity: 0;
@@ -45,7 +46,7 @@
     animation-name: hi_animation;
     animation-timing-function: ease-out;
     animation-fill-mode:forwards;
-    animation-delay: 200ms;
+    animation-delay: 700ms;
   }
   
 }
@@ -69,19 +70,27 @@
   justify-content: center;
 
   &--lists {
-    align-items: flex-start;
-    text-align: center;
-
-    h4 {
-      margin-bottom: 10px;
-      font-size: 1.2rem;
-      font-weight: 400;
-    }
+    flex-direction: column;
+    margin-top:20px;
   }
 }
 
 .list {
-  margin: 0 20px;
+  padding: 5px 20px;
+  max-width: 500px;
+  width: 100%;
+
+  h4{
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: 200;
+    margin: 0 0 20px 0;
+  }
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .para {
@@ -110,17 +119,5 @@
 
   .bold {
     color: $red;
-  }
-}
-
-.skills-list {
-  list-style-type: none;
-  margin: 0 30px;
-  padding: 0;
-
-  li {
-    font-size: .95rem;
-    font-weight: 200;
-    margin: 5px 0;
   }
 }
