@@ -8,7 +8,7 @@ class Home extends Component {
         <div className="home__header">
             <div className="home__links">
                 <Link to="/">Home</Link>
-                <Link to="/Resume">Resume</Link>
+                <Link to="/About">About</Link>
                 <Link to="/Video">Video</Link>
             </div>
         </div>
