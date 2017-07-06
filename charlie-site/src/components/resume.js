@@ -35,6 +35,7 @@ class Resume extends Component {
             <div className="p">.</div>
           </div>
         </div>
+        <div className="resume__devider"/>
         <Waypoint onEnter={()=>removeHidden(".profile-section")} bottomOffset="150px">
           <section className="resume__section profile-section hidden">
             <div className="profile-image">
@@ -47,7 +48,7 @@ class Resume extends Component {
         </Waypoint>
         <Waypoint onEnter={()=>removeHidden(".skills-section")} bottomOffset="150px">
           <section className="resume__section resume__section--lists skills-section hidden">
-            <h1 className="section-header">I have a some <span className="bold">skills</span></h1>
+            <h1 className="section-header">I have some <span className="bold">skills</span></h1>
             {this.getSkillsSection()}
           </section>
         </Waypoint>

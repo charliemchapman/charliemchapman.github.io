@@ -106,15 +106,16 @@
 
 .profile-image {
   margin: 0 20px;
-  height: 200px;
-  width: 200px;
+  height: 100px;
+  width: 100px;
   border: solid 1px $dark;
   border-radius: 50%;
   overflow: hidden;
 
   &__img {
-    max-height: 100%;
-    max-width: 100%;
+    max-height: 130%;
+    max-width: 130%;
+    margin: 0 0 0 -17px;
   }
 }
 
@@ -125,4 +126,9 @@
   .bold {
     color: $red;
   }
+}
+
+.resume__devider {
+  border-bottom: solid 1px $red;
+  margin: 10px 0;
 }
