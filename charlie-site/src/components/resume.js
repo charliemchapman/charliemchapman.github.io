@@ -46,6 +46,15 @@ class Resume extends Component {
             </div>
           </section>
         </Waypoint>
+        <Waypoint onEnter={()=>removeHidden(".external-links")} bottomOffset="150px">
+          <section className="resume__section resume__section--lists external-links hidden">
+            <div className="para">Quick Links</div>
+            <div className="external-buttons">
+              <a href="https://drive.google.com/open?id=0B3RH7R64TJImaXJIdmE0LU1DdVk">Resume (pdf)</a>
+              <a href="http://charliemchapman.myportfolio.com">Video Portfolio</a>
+            </div>
+          </section>
+        </Waypoint>
         <Waypoint onEnter={()=>removeHidden(".skills-section")} bottomOffset="150px">
           <section className="resume__section resume__section--lists skills-section hidden">
             <h1 className="section-header">I have some <span className="bold">skills</span></h1>

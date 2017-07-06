@@ -132,3 +132,23 @@
   border-bottom: solid 1px $red;
   margin: 10px 0;
 }
+
+.external-buttons {
+  margin-top: 40px;
+  margin-bottom: -20px;
+
+  a {
+    margin: 0px 20px;
+    background-color: $blue-lite;
+    color: $white;
+    padding: 7px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: .5s;
+  }
+
+  a:hover {
+    background-color: $blue-dark;
+    transition: .5s;
+  }
+}
