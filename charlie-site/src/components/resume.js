@@ -51,7 +51,7 @@ class Resume extends Component {
             <div className="para">Quick Links</div>
             <div className="external-buttons">
               <a href="https://drive.google.com/open?id=0B3RH7R64TJImaXJIdmE0LU1DdVk">Resume (pdf)</a>
-              <a href="https://video.charliemchapman.com">Video Portfolio</a>
+              <a href="http://video.charliemchapman.com">Video Portfolio</a>
             </div>
           </section>
         </Waypoint>
